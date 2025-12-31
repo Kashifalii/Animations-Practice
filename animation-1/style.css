@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: #BC9576;
+    position: relative;
+    overflow: hidden;
+}
+
+header .left {
+    background: #2B2F2E;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    transition: all ease 2s;
+    outline-offset: 5px;
+}
+
+header .right {
+    background: #2B2F2E;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    transition: all ease 2s;
+    outline-offset: 5px;
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    background: url("/Images/clock.png");
+    background-size: cover;
+    border-radius: 50%;
+    transition: all ease 2s;
+    position: absolute;
+    transform: scale(0);
+    left: 23%;
+    top: 28%;
+    z-index: 111;
+    opacity: 0;
+    border: 3px solid #2B2F2E;
+    outline: 15px solid #BC9576;
+}
